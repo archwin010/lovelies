@@ -9,16 +9,6 @@
     box-sizing: border-box;
 }
 
-
-.section-1{
-    display: flex;
-    padding-bottom: 4.5rem;
-    flex-direction: column;
-    align-items: center;
-    gap: 4rem;
-    background: var(--Wedding-Colors-Primary-Lighten);
-}
-
 nav {
     display: flex;
     padding: 1rem 5rem;
@@ -66,6 +56,15 @@ nav {
     line-height: 2rem;
 }
 
+.section-1{
+    display: flex;
+    padding-bottom: 4.5rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    background: var(--Wedding-Colors-Primary-Lighten);
+}
+
 .i-do {
     display: flex;
     padding: 0rem 5.5rem;
@@ -81,7 +80,7 @@ nav {
     gap: 2.5rem;
 }
 
-.item>.item1 {
+.item > .item1 {
     width: 46.8125rem;
     color: #000;
     font-family: 'Montaga';
@@ -91,7 +90,7 @@ nav {
     line-height: normal;
 }
 
-.item>.item2 {
+.item > .item2 {
     width: 40.375rem;
     color: #231F20;
     font-family: 'Montaga';
@@ -119,9 +118,60 @@ nav {
 }
 
 
- img {
+.i-do > img {
     width: 26.75rem;
     height: 36.5rem;
     border-radius: 50rem;
     background: url(<path-to-image>) lightgray 50% / cover no-repeat, #D60B0B;
+}
+
+.section-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5.5rem;
+}
+
+.section-2 > .par1 {
+    color: #000;
+    font-family: 'Montaga';
+    font-size: 4.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.section-2 > .par2 {
+    width: 46.8125rem;
+    color: #231F20;
+    font-family: 'Montaga';
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    text-wrap: balance; 
+    word-spacing: 5px;
+}
+
+.canvas {
+    width: 100%;
+    height: 37.1875rem;
+    /* background: url(<path-to-image>) lightgray 50% / cover no-repeat, #FFF; */
+}
+
+.footer {
+    text-align: center;
+    width: 100%;
+    padding: 2.5rem;
+    gap: 0.625rem;
+    color: #000;
+    font-family: 'Montaga';
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+.footer > a {
+    text-decoration: underline;
 }
