@@ -9,15 +9,6 @@
     box-sizing: border-box;
 }
 
-body {
-    display: flex;
-    width: 90rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5.5rem;
-    background: #FFF;
-}
 
 .section-1{
     display: flex;
@@ -30,7 +21,7 @@ body {
 
 nav {
     display: flex;
-    padding: 32px 88px;
+    padding: 1rem 5rem;
     justify-content: space-between;
     align-items: center;
     align-self: stretch;
@@ -80,6 +71,7 @@ nav {
     padding: 0rem 5.5rem;
     align-items: center;
     gap: 5.4375rem;
+    height: 100vh;
 }
 
 .item {
