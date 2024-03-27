@@ -1,0 +1,135 @@
+:root {
+    --Wedding-Colors-Primary: #C6754D;
+    --Wedding-Colors-Primary-Lighten: #F0CCBB;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    width: 90rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5.5rem;
+    background: #FFF;
+}
+
+.section-1{
+    display: flex;
+    padding-bottom: 4.5rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    background: var(--Wedding-Colors-Primary-Lighten);
+}
+
+nav {
+    display: flex;
+    padding: 32px 88px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    background: #FFF;
+}
+
+.nav-item1 {
+    display: flex;
+    align-items: center;
+    gap: 0.5625rem;
+}
+
+.nav-item1 img {
+    width: 1.08763rem;
+    height: 1.66775rem;
+}
+
+.nav-item1 p {
+    color: var(--Wedding-Colors-Primary);
+    font-family: 'Montaga';
+    font-size: 2.0625rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.nav-item2 {
+    display: flex;
+    align-items: flex-start;
+}
+
+.nav-item2 a {
+    padding: 0.5rem 2.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    text-decoration: none;
+    color: #000;
+    font-family: 'Montaga';
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+.i-do {
+    display: flex;
+    padding: 0rem 5.5rem;
+    align-items: center;
+    gap: 5.4375rem;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.5rem;
+}
+
+.item>.item1 {
+    width: 46.8125rem;
+    color: #000;
+    font-family: 'Montaga';
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.item>.item2 {
+    width: 40.375rem;
+    color: #231F20;
+    font-family: 'Montaga';
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.item > button {
+    display: flex;
+    padding: 0.875rem 1.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 1rem;
+    background: var(--Wedding-Colors-Primary);
+    border: none;
+    color: #FFF;
+    font-family: 'Montaga';
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+
+ img {
+    width: 26.75rem;
+    height: 36.5rem;
+    border-radius: 50rem;
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat, #D60B0B;
+}
