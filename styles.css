@@ -172,6 +172,14 @@ nav {
     line-height: 2rem;
 }
 
-.footer > a {
-    text-decoration: underline;
+.footer p > a {
+    color: #000;
+}
+
+.footer p > a:visited {
+    color: #000;
+} 
+
+.footer p > a:active {
+    color: #000;
 }
