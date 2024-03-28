@@ -58,7 +58,6 @@ nav {
 
 .section-1{
     display: flex;
-    padding-bottom: 4.5rem;
     flex-direction: column;
     align-items: center;
     gap: 4rem;
