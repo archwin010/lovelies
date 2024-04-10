@@ -184,3 +184,219 @@ nav {
 .footer p > a:active {
     color: #000;
 }
+
+
+
+@media only screen and (max-width: 600px) {
+    nav, .section-1,
+    .section-2, img.canvas, .footer {
+        width: 100%;
+        height: auto;
+    }
+
+    nav {
+        padding: 1rem 3rem;
+    }
+
+    .nav-item1 img {
+        width: 1rem;
+        height: 1.4rem;
+    }
+
+    .nav-item1 p {
+        font-size: 1.6rem;
+    }
+
+    .nav-item2 a {
+        padding: 0.5rem;
+        font-size: 1.2rem;
+    }
+
+    .section-1 {
+        height: 70vh;
+    }
+
+    .section-1 > .i-do {
+        padding: 0;
+        gap: 4rem;
+    }
+
+    .item > .item1 {
+        width: 12rem;
+        font-size: 2.1rem;
+        flex-wrap: wrap;
+    }
+
+    .item > .item2 {
+        width: 12rem;
+        font-size: 1rem;
+    }
+    
+    .i-do  > img {
+        width: auto;
+        height: 20rem;
+    }
+    
+    .item > button {
+        padding: 0.7rem 1.5rem;
+        font-size: 1rem;
+    }
+   
+    .section-2 {
+        padding: 4rem;
+        gap: 2rem;
+    }
+
+    .section-2 > .par1 {
+        font-size: 3rem;
+    }
+
+    .section-2 > .par2 {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    nav, .section-1,
+    .section-2, img.canvas, .footer {
+        width: 100%;
+        height: auto;
+    }
+
+    nav {
+        padding: 1rem 3rem;
+    }
+
+    .nav-item1 img {
+        width: 1rem;
+        height: 1.4rem;
+    }
+
+    .nav-item2 {
+        gap: 1.5rem;
+    }
+
+    .nav-item1 p {
+        font-size: 1.6rem;
+    }
+
+    .nav-item2 a {
+        padding: 0.5rem;
+        font-size: 1.2rem;
+    }
+
+    .item {
+        width: 10%;
+    }
+
+    .i-do {
+        padding: 0;
+        width: 100%;
+        justify-content: space-evenly;
+        gap: 10rem;
+    }
+
+    .item > .item1 {
+        width: 12rem;
+        font-size: 2rem;
+    }
+
+    .item > button {
+        width: 9.6rem;
+        font-size: 1rem;
+    }
+
+    .item > .item2 {
+        width: 10rem;
+        font-size: 1rem;
+    }
+
+    .i-do > img {
+        width: auto;
+        height: 26rem;
+    }
+
+    .section-2 {
+        padding: 3.5rem;
+    }
+
+    .section-2 > .par1 {
+        font-size: 3.5rem;
+    }
+
+    .section-2 > .par2 {
+        font-size: 1rem;
+        width: 32rem;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .i-do {
+        gap: 5rem;
+    }
+    
+    .item {
+        width: auto;
+    }
+
+    .item > .item1 {
+        width: 18rem;
+        font-size: 3rem;
+    }
+
+    .item > .item2 {
+            width: 19rem;
+            font-size: 1rem;
+    }
+
+    .i-do > img {
+        height: 32rem;
+    }
+
+    .item > button {
+        width: auto;
+        font-size: 1.125rem
+    }
+
+    .section-2 {
+        padding: 5.5rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    nav {
+        padding-top: 2rem;
+    }
+    
+    .section-1 {
+        height: 95vh;
+        margin-top: 2rem;
+    }
+
+    .i-do {
+        gap: 5.4375rem;
+    }
+
+    .i-do > img {
+        width: 26.75rem;
+        height: 35rem;
+    }
+
+    .item > .item1 {
+        width: 30rem;
+        font-size: 4rem;
+    }
+
+    .item > .item2 {
+        width: 34rem;
+        font-size: 1.5rem;
+    }
+
+   .section-2 > .par1 {
+        font-size: 4.5rem;
+    }
+    
+    .section-2 > .par2 {
+        font-size: 1.5rem;
+    }
+}
