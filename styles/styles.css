@@ -62,7 +62,7 @@ nav {
     align-items: center;
     gap: 4rem;
     background: var(--Wedding-Colors-Primary-Lighten);
-    margin: 20px 0;
+    margin: 1.3rem 0;
 }
 
 .i-do {
@@ -156,8 +156,7 @@ nav {
 .canvas {
     width: 100%;
     height: 37.1875rem;
-    /* background: url(<path-to-image>) lightgray 50% / cover no-repeat, #FFF; */
-    margin-top: 15px;
+    margin-top: 0.938rem;
 }
 
 .footer {
@@ -188,6 +187,16 @@ nav {
 
 
 @media only screen and (max-width: 600px) {
+    .nav-item2 > a {
+        display: none;  
+    }
+
+    .nav-item2 > i {
+        width: 1.5rem;
+        height: 1.5rem;
+        flex-shrink: 0;
+    }
+
     nav, .section-1,
     .section-2, img.canvas, .footer {
         width: 100%;
@@ -331,6 +340,10 @@ nav {
 }
 
 @media only screen and (min-width: 992px) {
+    .nav-item2 > i {
+        display: none;
+    }
+
     .i-do {
         gap: 5rem;
     }
@@ -366,6 +379,10 @@ nav {
 @media only screen and (min-width: 1200px) {
     nav {
         padding-top: 2rem;
+    }
+
+    .nav-item2 > i {
+        display: none;
     }
     
     .section-1 {

@@ -1,0 +1,232 @@
+:root {
+    --Wedding-Colors-Primary: #C6754D;
+    --Wedding-Colors-Primary-Lighten: #F0CCBB;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*********** beginning of the nav bar styling **********/
+nav {
+    display: flex;
+    padding: 1rem 5rem;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    background: #FFF;
+}
+
+.nav-item1 {
+    display: flex;
+    align-items: center;
+    gap: 0.5625rem;
+}
+
+.nav-item1 img {
+    width: 1.08763rem;
+    height: 1.66775rem;
+}
+
+.nav-item1 p {
+    color: var(--Wedding-Colors-Primary);
+    font-family: 'Montaga';
+    font-size: 2.0625rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.nav-item2 {
+    display: flex;
+    align-items: flex-start;
+}
+
+.nav-item2 a {
+    padding: 0.5rem 2.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    text-decoration: none;
+    color: #000;
+    font-family: 'Montaga';
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2rem;
+}
+/*********** end of the nav bar styling **********/
+
+
+/*********** section 1 styling begins here **********/
+.section-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    background: var(--Wedding-Colors-Primary-Lighten);
+    margin: 1.3rem 0;
+}
+
+.i-do {
+    display: flex;
+    padding: 0rem 5.5rem;
+    align-items: center;
+    gap: 5.4375rem;
+    height: 100vh;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.5rem;
+    margin-left: -15rem;
+}
+
+.item > .item1 {
+    width: 46.8125rem;
+    color: #000;
+    font-family: 'Montaga';
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.item > .item2 {
+    width: 40.375rem;
+    color: #231F20;
+    font-family: 'Montaga';
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.frame {
+    margin: -18rem 0 0 -4rem;
+}
+
+.frame img:first-child {
+    position: absolute;
+}
+
+.frame img:last-child {
+    position: relative;
+    bottom: -20rem;
+    right: -15rem;
+}
+/*********** end of the section 1 styling **********/
+
+
+/*********** beginning of section 2 styling **********/
+.section-2a {
+    display: flex;
+    width: 90rem;
+    padding: 4rem 5.5rem;
+    gap: 4rem;
+}
+
+.section-2a > .time,
+.place {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex: 1 0 0;
+}
+
+.section-2a > .time h1,
+.place h1 {
+    align-self: stretch;
+    color: #231F20;
+    font-family: Montaga;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.section-2a > .time p,
+.place p {
+    align-self: stretch;
+    color: #231F20;
+    font-family: Montaga;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+.time p > em,
+.place p > em {
+    opacity: 0.8;
+    color: #440404;
+    font-family: Montaga;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+.section-2b {
+    width: 79rem;
+    height: 33rem;
+    display: flex;
+    padding: 4rem 5.5rem;
+}
+
+.section-2b > .canvas1 {
+    width: 44.875rem;
+    height: 25rem;
+    flex-shrink: 0;
+}
+
+.section-2b > .canvas2 {
+    display: flex;
+    height: 14rem;
+    width: 42.875rem;
+    padding: 2rem 4rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    background: #C6754D;
+    position: relative;
+    left: -8.8rem;
+    bottom: -9rem;
+}
+
+.canvas2 h3 {
+    align-self: stretch;
+    color: #FFF;
+    font-family: Montaga;
+    font-size: 2.6875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.canvas2 p {
+    align-self: stretch;
+    color: #FFF;
+    font-family: Montaga;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    opacity: 0.8;
+    width: 35rem;
+}
+
+.section-2 .svg {
+    width: 10.16144rem;
+    height: 11.47869rem;
+    transform: rotate(-50.486deg);
+    flex-shrink: 0;
+    position: absolute;
+    /* top: -20rem; */
+    left: 90%;
+    z-index: inherit;
+}
