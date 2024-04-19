@@ -1,6 +1,7 @@
 :root {
     --Wedding-Colors-Primary: #C6754D;
     --Wedding-Colors-Primary-Lighten: #F0CCBB;
+    --Neutral-Background: #FCF9F7;
 }
 
 * {
@@ -9,15 +10,16 @@
     box-sizing: border-box;
 }
 
+/* .story {
+    width: 100vw;
+} */
+
 
 /*********** beginning of the nav bar styling **********/
 nav {
     display: flex;
-    padding: 1rem 5rem;
+    padding: 1rem 4rem;
     justify-content: space-between;
-    align-items: center;
-    align-self: stretch;
-    background: #FFF;
 }
 
 .nav-item1 {
@@ -35,8 +37,6 @@ nav {
     color: var(--Wedding-Colors-Primary);
     font-family: 'Montaga';
     font-size: 2.0625rem;
-    font-style: normal;
-    font-weight: 400;
 }
 
 .nav-item2 {
@@ -46,15 +46,10 @@ nav {
 
 .nav-item2 a {
     padding: 0.5rem 2.5rem;
-    justify-content: center;
-    align-items: center;
-    gap: 0.625rem;
     text-decoration: none;
     color: #000;
     font-family: 'Montaga';
     font-size: 1.375rem;
-    font-style: normal;
-    font-weight: 400;
     line-height: 2rem;
 }
 /*********** end of the nav bar styling **********/
@@ -65,45 +60,37 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 4rem;
     background: var(--Wedding-Colors-Primary-Lighten);
     margin: 1.3rem 0;
+    padding: 2rem;
 }
 
 .i-do {
     display: flex;
-    padding: 0rem 5.5rem;
     align-items: center;
-    gap: 5.4375rem;
+    gap: 5rem;
     height: 100vh;
 }
 
 .item {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     gap: 2.5rem;
-    margin-left: -15rem;
+    margin-left: -18rem;
 }
 
 .item > .item1 {
-    width: 46.8125rem;
-    color: #000;
+    width: 45rem;
     font-family: 'Montaga';
     font-size: 5rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
 }
 
 .item > .item2 {
-    width: 40.375rem;
+    width: 40rem;
     color: #231F20;
     font-family: 'Montaga';
     font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 140%;
+    line-height: 2;
 }
 
 .frame {
@@ -123,9 +110,12 @@ nav {
 
 
 /*********** beginning of section 2 styling **********/
+.section-2 {
+    padding-bottom: 1.5rem;
+}
+
 .section-2a {
     display: flex;
-    width: 90rem;
     padding: 4rem 5.5rem;
     gap: 4rem;
 }
@@ -135,29 +125,23 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    flex: 1 0 0;
+    flex: 1;
 }
 
 .section-2a > .time h1,
 .place h1 {
-    align-self: stretch;
     color: #231F20;
     font-family: Montaga;
     font-size: 2.5rem;
-    font-style: normal;
     font-weight: 400;
-    line-height: 100%;
+    line-height: 1;
 }
 
-.section-2a > .time p,
-.place p {
-    align-self: stretch;
+.section-2a p {
     color: #231F20;
     font-family: Montaga;
     font-size: 1.125rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 160%;
+    line-height: 2;
 }
 
 .time p > em,
@@ -167,30 +151,19 @@ nav {
     font-family: Montaga;
     font-size: 1.5rem;
     font-style: normal;
-    font-weight: 400;
-    line-height: 160%;
+    line-height: 2;
 }
 
 .section-2b {
-    width: 79rem;
-    height: 33rem;
     display: flex;
     padding: 4rem 5.5rem;
-}
-
-.section-2b > .canvas1 {
-    width: 44.875rem;
-    height: 25rem;
-    flex-shrink: 0;
 }
 
 .section-2b > .canvas2 {
     display: flex;
     height: 14rem;
-    width: 42.875rem;
-    padding: 2rem 4rem;
+    padding: 2rem;
     flex-direction: column;
-    align-items: flex-start;
     gap: 2rem;
     background: #C6754D;
     position: relative;
@@ -203,9 +176,8 @@ nav {
     color: #FFF;
     font-family: Montaga;
     font-size: 2.6875rem;
-    font-style: normal;
+    line-height: 0.7;
     font-weight: 400;
-    line-height: 100%;
 }
 
 .canvas2 p {
@@ -213,20 +185,359 @@ nav {
     color: #FFF;
     font-family: Montaga;
     font-size: 1.125rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 160%;
+    line-height: 2;
     opacity: 0.8;
     width: 35rem;
 }
 
+.section-2 {
+    position: relative;
+}
+
 .section-2 .svg {
-    width: 10.16144rem;
-    height: 11.47869rem;
-    transform: rotate(-50.486deg);
-    flex-shrink: 0;
     position: absolute;
-    /* top: -20rem; */
-    left: 90%;
-    z-index: inherit;
+    color: #2B1105;
+    right: 0;
+    bottom: 10rem;
+}
+
+
+/* beginning of the train styling */
+.train-container {
+    height: 55rem;
+    background: #97917A;
+    position: relative;
+}
+
+.train-container > img {
+    position: absolute;
+    top: 0;
+    color: #2B1105;
+    left: 15rem;
+}
+
+.train-container h6 {
+    color: var(--Neutral-Background);
+    font-family: Montaga;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.groomsmen, .bridesmaid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    align-self: stretch;    
+}
+
+.train h2 {
+    color: var(--Neutral-Background);
+    font-family: Montaga;
+    font-size: 2.5rem;
+    line-height: 2;
+    font-weight: 400;
+    text-align: center;
+}
+
+.groomsmen > div,
+.bridesmaid > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.train p {
+    color: var(--Neutral-Background);
+    font-family: Montaga;
+    font-size: 1.2rem;
+    line-height: 1;
+} 
+
+
+/* beginning of the footer styling */
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.footer > p {
+    font-family: Montaga;
+    font-size: 1rem;
+}
+
+.footer p > a {
+    color: #000;
+}
+
+.footer p > a:visited {
+    color: #000;
+} 
+
+.footer p > a:active {
+    color: #000;
+}
+
+
+
+/************** MEDIA QUERIES *****************/
+@media screen and (max-width: 600px) {
+    nav {
+        padding: 1rem;
+    }
+
+    nav > .nav-item2 {
+        display: none;
+    }
+
+    .nav-item1 > img {
+        width: 1rem;
+        height: 1.3rem;
+    }
+
+    .nav-item1 > p {
+        font-size: 1.5rem;
+    }
+
+    nav > i {
+        display: flex;
+        align-items: center;
+    }
+
+    .section-1, .section-2a,
+    .section-2b {
+        display: block;
+    }
+    
+    .section-1 > .i-do {
+        display: flex;
+        flex-direction: column;
+        height: 110vh;
+    }
+
+    .i-do > .item {
+        margin: 2rem 0 0 0;
+        gap: 1rem;
+    }
+
+    .i-do > .item > .item1 {
+        font-size: 3rem;
+        width: auto;
+        padding-left: 1rem;
+    }
+
+    .i-do > .item > .item2 {
+        font-size: 1.2rem;
+        width: auto;
+        align-items: center;
+        padding-left: 1rem;
+    }
+
+    .i-do > .frame {
+        margin: -3rem 4rem 0 -5rem;
+    }
+
+    .i-do > .frame img:first-child {
+        width: 15rem;
+    }
+
+    .i-do > .frame img:last-child {
+        width: 10rem;
+        bottom: -10rem;
+        right: -9rem;
+    }
+
+    .section-2 {
+        padding-bottom: 0.5rem;
+    }
+
+    .section-2 > .mobile > img {
+        width: 100vw;
+    }
+
+    .section-2 > .section-2a {
+        padding: 2rem;
+    }
+
+    .section-2a > .time , .place {
+        padding-bottom: 2rem;
+    }
+
+    .section-2 > .section-2a >
+     .time > p, .section-2 >
+      .section-2a .place > p {
+        width: 18rem;
+    }
+    
+    .section-2 > .section-2b {
+        padding: 3rem;
+        margin-top: 9rem;
+    }
+
+    .section-2 > .section-2b > .canvas1 > img {
+        width: 20rem;
+        margin-left: -0.5rem;
+    }
+
+    .section-2 > .section-2b >
+    .canvas2 {
+        left: 3rem;
+        top: -7em;
+        width: 19rem;
+    }
+
+    .section-2 .section-2b > .canvas2 > p {
+        font-size: 0.8rem;
+        width: 15rem;
+    }
+
+    .section-2 > .svg {
+        bottom: 13rem;
+        height: 9rem;
+    }
+
+    .train-container {
+        padding-bottom: 2rem;
+    }
+
+    .train-container h6 {
+        padding-top: 7rem;
+    }
+
+    .train-container > img {
+        left: 2rem;
+        height: 4rem;
+    }
+
+    .train > .groomsmen,  .bridesmaid {
+        flex-direction: column;
+    }
+
+    .train > .groomsmen > div > img,
+    .train > .bridesmaid > div > img {
+        width: 80vw;
+    }
+
+    .train h2:first-of-type {
+        margin-top: -2rem;
+    }
+
+    .train h2 {
+        line-height: 3;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    nav > i{
+        display: none;
+    }
+
+    .section-1 {
+        margin: 0;
+        padding: 0;
+    }
+
+    .i-do {
+        height: 90vh;
+    }
+
+    .item {
+        margin-left: -30rem;
+    }
+
+    .item > .item1 {
+        font-size: 2.5rem;
+        width: auto;
+    }
+
+    .item > .item2 {
+        font-size: 1.2rem;
+        width: 20rem;        
+    }
+
+    .frame {
+        margin: -12rem -17rem 0 10rem;
+    }
+
+    .frame img:first-child {
+        width: 22rem;
+    }
+
+    .frame img:last-child {
+        bottom: -12rem;
+        right: -14rem;
+        width: 15rem;
+    }
+
+    .section-2 > .mobile {
+        display: block;
+    }
+
+    .section-2a {
+        padding: 4rem;
+    }
+
+    .section-2a > .time + .place {
+        gap: 1;
+    }
+    
+
+    .time p > em, .place p > em {
+        font-size: 1rem;
+    }
+
+    .section-2b {
+        position: relative;
+        padding: 4rem;
+    }
+
+    .section-2b > .canvas1 > img {
+        width: 36rem;
+    }
+
+    .section-2b > .canvas2 {
+        position: absolute;
+        left: 32em;
+        top: 9em;
+        height: 12rem;
+        gap: 1rem;
+    }
+    
+    .section-2b > .canvas2 > h3,
+    .section-2a > .time > h1 ,
+    .section-2a > .place > h1  {
+        font-size: 2rem;
+    }
+
+    .section-2b > .canvas2 > p,
+    .section-2a > .time > p ,
+    .section-2a > .place > p {
+        font-size: 1rem;
+        width: 30rem;
+    }
+
+    .train-container {
+        height: auto;
+    }
+
+    .groomsmen > div > img,
+    .bridesmaid > div > img {
+        width: 15rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    nav > i {
+        display: none;
+    }
+
+    .section-2 > .mobile {
+        display: none;
+    }
 }
