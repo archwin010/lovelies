@@ -289,11 +289,17 @@ nav {
 /************** MEDIA QUERIES *****************/
 @media screen and (max-width: 600px) {
     nav {
-        padding: 1rem;
+        padding: 1.3rem;
     }
 
     nav > .nav-item2 {
         display: none;
+    }
+
+    nav .hamburger {
+        width: 2rem;
+        display: flex;
+        align-items: center;
     }
 
     .nav-item1 > img {
@@ -318,7 +324,7 @@ nav {
     .section-1 > .i-do {
         display: flex;
         flex-direction: column;
-        height: 110vh;
+        height: 95vh;
     }
 
     .i-do > .item {
@@ -434,7 +440,7 @@ nav {
 }
 
 @media screen and (max-width: 1200px) {
-    nav > i{
+    nav > .hamburger {
         display: none;
     }
 
@@ -533,7 +539,7 @@ nav {
 }
 
 @media screen and (min-width: 1200px) {
-    nav > i {
+    nav > .hamburger {
         display: none;
     }
 
