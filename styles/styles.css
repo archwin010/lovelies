@@ -227,28 +227,39 @@ nav {
 
     .section-1 > .i-do {
         padding: 0;
-        gap: 4rem;
+        gap: 1rem;
     }
-
+    
     .item > .item1 {
-        width: 12rem;
-        font-size: 2.1rem;
+        width: 8rem;
+        font-size: 1.2rem;
+        font-weight: 500;
         flex-wrap: wrap;
+        object-fit: contain;
     }
 
     .item > .item2 {
+        width: 5rem;
+        font-size: 0.7rem;
+        object-fit: contain;
+    }
+    
+    .i-do  > .image {
         width: 12rem;
-        font-size: 1rem;
+        height: 12rem;
+        display: flex;
+        justify-content: center;
     }
-    
-    .i-do  > img {
-        width: auto;
-        height: 20rem;
+
+    .image img {
+        max-width: 100%;
+        max-height: 100%; 
+        object-fit: contain;
     }
-    
+      
     .item > button {
         padding: 0.7rem 1.5rem;
-        font-size: 1rem;
+        font-size: 0.6rem;
     }
    
     .section-2 {
