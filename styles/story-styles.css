@@ -230,8 +230,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1.5rem;
-    align-self: stretch;    
+    gap: 3rem;
 }
 
 .train h2 {
